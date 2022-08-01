@@ -1,25 +1,14 @@
-import logo from "./logo.svg";
-// import "./App.css";
-
+// CSS
 import "./styles/sass/App.css";
+
+import Component_Module_1 from "./Components/Component_Model/Component_Module_1";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <h1>Testing SASS</h1>
+        <h1>TDM's Components Repository</h1>
+        <Component_Module_1 />
       </header>
     </div>
   );
