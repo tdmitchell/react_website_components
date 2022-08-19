@@ -1,1 +1,52 @@
-/*# sourceMappingURL=App.css.map */
+:root {
+  --textColor: #34ca48;
+  --backColor: rgb(218, 182, 63);
+}
+
+.component {
+  background-color: var(--backColor);
+}
+
+.color-pickers {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.color-pickers .text-color-picker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 50px 50px;
+  border-radius: 25px;
+  margin: 20px;
+}
+.color-pickers .text-color-picker .picker {
+  margin: 10px;
+  width: 200px;
+}
+.color-pickers .text-color-picker .color-info {
+  display: flex;
+  flex-direction: row;
+}
+.color-pickers .text-color-picker .color-info .pickText,
+.color-pickers .text-color-picker .color-info .colorCode {
+  font-size: 25px;
+  font-weight: normal;
+  padding: 0px 10px;
+  text-align: center;
+}
+.color-pickers .text-color-picker .color-info .pickText {
+  color: var(--textColor);
+}
+
+.inputColor {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}/*# sourceMappingURL=App.css.map */

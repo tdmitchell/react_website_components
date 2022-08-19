@@ -1,0 +1,128 @@
+:root {
+    --textColor: #34ca48;
+    --backColor: rgb(218, 182, 63);
+}
+
+//// ------------------NOT WORKING -----------------------
+// body {
+//     background-color: var(--backColor);
+// }
+
+// ------------------NOT WORKING -----------------------
+.component {
+    background-color: var(--backColor);
+}
+
+// .color-pickers {
+//     display: inline-flex;
+//         justify-content: center;
+//         align-items: center;
+// }
+
+// .text-color-picker, .color-picker {
+//     display: inline-flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: white;
+//     padding: 50px 50px;
+//     border-radius: 25px;
+//     margin: 20px;
+// }
+
+// .pickText {
+//     font-size: 25px;
+//     color: var(--textColor);
+//     font-weight: normal;
+//     padding: 0px 10px;
+//     text-align: center;
+// }
+
+// .picker {
+//     margin: 10px;
+//     width: 60px;
+//     height: 60px;
+//     border-radius: 50%;
+//     overflow: hidden;
+//     position: relative;
+// }
+
+// .inputColor {
+//     width: 150px;
+//     height: 150px;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     cursor: pointer;
+// }
+
+// .colorCode {
+//     width: 100px;
+//     padding: 20px;
+// }
+
+
+
+.color-pickers {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    .text-color-picker {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 50px 50px;
+        border-radius: 25px;
+        margin: 20px;
+
+        .picker {
+            margin: 10px;
+            width: 200px;
+            // height: 60px;
+            // border-radius: 50%;
+            // overflow: hidden;
+            // position: relative;
+        }
+
+        .color-info {
+            display: flex;
+            flex-direction: row;
+
+            .pickText,
+            .colorCode {
+                font-size: 25px;
+                font-weight: normal;
+                padding: 0px 10px;
+                text-align: center;
+        
+            }
+
+            .pickText {
+                color: var(--textColor);
+            }
+        }
+
+
+    }
+}
+
+
+
+
+.inputColor {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+// .colorCode {
+//     width: 100px;
+//     padding: 20px;
+// }
